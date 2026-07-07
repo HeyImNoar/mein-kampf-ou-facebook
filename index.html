@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mein Kampf ou Facebook ?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ÉCRAN D'ACCUEIL -->
+  <section id="screen-home" class="screen screen-home">
+    <div class="home-card">
+      <p class="eyebrow">Jeu à des fins purement pédagogiques</p>
+
+      <h1>
+        Mein Kampf<br>
+        <span>ou Facebook ?</span>
+      </h1>
+
+      <p class="home-description">
+        Des citations apparaissent une par une.
+        </p>
+      <p> 
+        À toi de deviner si elles viennent de Mein Kampf ou de Facebook.
+      </p>
+      
+
+      <div class="home-buttons">
+        <button id="start-button" class="main-button">
+          Commencer
+        </button>
+
+        <button id="rules-button" class="secondary-button">
+          Règles
+        </button>
+
+        <button id="options-button" class="secondary-button">
+          Options
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ÉCRAN DU JEU -->
+  <main id="screen-game" class="game screen hidden">
+    <h1>Mein Kampf ou Facebook ?</h1>
+
+    <p class="intro">
+      Devine d'où vient cette citation.
+    </p>
+
+    <div class="quote-card">
+      <p id="quote">
+        La citation apparaîtra ici.
+      </p>
+    </div>
+
+    <div class="buttons">
+      <button id="btn-meinkampf">
+        <img class="icon-img" src="images/hitler.png" alt="">
+        <span class="label">Mein Kampf</span>
+      </button>
+
+      <button id="btn-facebook">
+        <img class="icon-img" src="images/facebook.png" alt="">
+        <span class="label">Facebook</span>
+      </button>
+    </div>
+
+    <p id="result"></p>
+    <p>Score : <span id="score">0</span></p>
+
+    <button id="back-from-game" class="secondary-button">
+      Retour au menu
+    </button>
+  </main>
+
+
+  <!-- ÉCRAN DES RÈGLES -->
+  <section id="screen-rules" class="screen hidden">
+    <div class="home-card">
+      <h2>Règles</h2>
+
+      <p>
+        Lis la citation affichée, puis choisis son origine.
+      </p>
+
+      <p>
+        Si tu réponds correctement, tu gagnes un point.
+      </p>
+
+      <p>
+        Une partie compte 10 manches.
+      </p>
+
+      <button id="back-from-rules" class="secondary-button">
+        Retour
+      </button>
+    </div>
+  </section>
+
+
+  <!-- ÉCRAN DES OPTIONS -->
+  <section id="screen-options" class="screen hidden">
+    <div class="home-card">
+      <h2>Options</h2>
+
+      <p>
+        Les options.
+      </p>
+
+      <button id="back-from-options" class="secondary-button">
+        Retour
+      </button>
+    </div>
+  </section>
+
+  <!-- ÉCRAN DE FIN -->
+  <section id="screen-end" class="screen hidden">
+    <div class="home-card">
+      <h2>Fin de partie</h2>
+
+      <p id="final-score">
+        Score final : 0 / 10
+      </p>
+
+      <p id="final-message">
+        Message de fin.
+      </p>
+
+      <div class="home-buttons">
+        <button id="replay-button" class="main-button">
+          Rejouer
+        </button>
+
+        <button id="home-from-end-button" class="secondary-button">
+          Retour à l'accueil
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
